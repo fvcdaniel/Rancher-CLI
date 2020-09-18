@@ -9,6 +9,7 @@ echo $token
 echo $context
 echo $url
 echo $command
+echo $GITHUB_SHA
 
 echo rancher login --token $token $url
 echo rancher context switch $context
