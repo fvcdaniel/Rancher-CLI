@@ -1,4 +1,3 @@
-  
 name: Rancher CLI
 description: Use the Rancher CLI in github actions
 author: dwene
@@ -15,8 +14,8 @@ inputs:
   url:
     description: URL of the Rancher instance.
     required: true
-  args:
-    description: Command you want to run. 
+  command:
+    description: Command you want to run.
     required: true
 runs:
   using: docker
