@@ -22,4 +22,4 @@ jobs:
           context: .
           push: true
           file: Dockerfile
-          tags: lambdacurry/Rancher-CLI
+          tags: lambdacurry/rancher-cli:2.0.0

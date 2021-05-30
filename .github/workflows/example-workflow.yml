@@ -1,15 +1,18 @@
-name: A workflow for my Hello World file
-on: push
+# name: A workflow for my Hello World file
+# on:
+#   push:
+#     branches:
+#       - none
 
-jobs:
-  build:
-    name: Rancher-Action-Example-Workflow
-    runs-on: ubuntu-latest    
-    steps:
-      - name: Rancher CLI Action
-        uses: colbyhill21/Rancher-Action@1.1
-        with:
-          args: '"get pods"'
-          token: ${{ secrets.RANCHER_TOKEN }}
-          context: ${{ secrets.RANCHER_CONTEXT }}
-          url: ${{ secrets.RANCHER_URL }}
+# jobs:
+#   build:
+#     name: Rancher-Action-Example-Workflow
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Rancher CLI Action
+#         uses: Lambda-Curry/Rancher-Action@1.8.0
+#         with:
+#           args: '"get pods"'
+#           token: ${{ secrets.RANCHER_TOKEN }}
+#           context: ${{ secrets.RANCHER_CONTEXT }}
+#           url: ${{ secrets.RANCHER_URL }}
