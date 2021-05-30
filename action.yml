@@ -19,4 +19,4 @@ inputs:
     required: true
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://lambdacurry/rancher-cli:2.0.0
