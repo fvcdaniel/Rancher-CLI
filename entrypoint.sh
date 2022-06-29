@@ -3,7 +3,8 @@
 token="$INPUT_TOKEN"
 context="$INPUT_CONTEXT"
 url="$INPUT_URL"
-command="$INPUT_COMMAND"
+# command="$INPUT_COMMAND"
+command="$COMMAND$VERSION"
 
 set
 
