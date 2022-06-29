@@ -3,7 +3,7 @@
 token="$INPUT_TOKEN"
 context="$INPUT_CONTEXT"
 url="$INPUT_URL"
-command=$(echo -n $INPUT_COMMAND)
+command="$INPUT_COMMAND"
 
 set
 
