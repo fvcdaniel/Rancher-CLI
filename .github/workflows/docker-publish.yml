@@ -23,7 +23,7 @@ jobs:
       - name: Test criate namespace
         uses: ./ # Uses an action in the root directory
         with:
-          command: $COMMAND
+          command: '"$COMMAND"'
           token: token-h82zd:xpf45g9f6qv78swjvf79rkbwts4c4pqprjhpvmsvgx9zc6stnz7ctb
           context: c-m-b57b98j6:p-slt2w
           url: https://rancher.apps.oddie.com.br
