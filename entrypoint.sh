@@ -3,7 +3,7 @@
 token="$INPUT_TOKEN"
 context="$INPUT_CONTEXT"
 url="$INPUT_URL"
-command="$INPUT_COMMAND"
+command=$(echo -n $INPUT_COMMAND)
 
 echo "running the following commands:"
 echo rancher login --token $token $url --context $context
