@@ -14,7 +14,7 @@ jobs:
       - name: Test criate namespace
         uses: ./ # Uses an action in the root directory
         with:
-          args: '"namespaces create back-testesteste"'
+          command: '"namespaces create back-testesteste"'
           token: token-l8rt8:j6zlqwsprd5b9vrh9wwnbkzg85bsnxmjlmzq2qvfchxf6x2h2k5zsf
           context: c-m-b57b98j6:p-slt2w
           url: https://rancher.apps.oddie.com.br
