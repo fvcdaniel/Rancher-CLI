@@ -5,6 +5,8 @@ context="$INPUT_CONTEXT"
 url="$INPUT_URL"
 command=$(echo -n $INPUT_COMMAND)
 
+set
+
 echo "running the following commands:"
 echo rancher login --token $token $url --context $context
 echo rancher $command
