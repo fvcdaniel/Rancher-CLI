@@ -15,6 +15,6 @@ jobs:
         uses: ./ # Uses an action in the root directory
         with:
           command: 'namespaces create back-testesteste$(echo -n $GITHUB_REF_NAME)'
-          token: token-l8rt8:j6zlqwsprd5b9vrh9wwnbkzg85bsnxmjlmzq2qvfchxf6x2h2k5zsf
+          token: token-h82zd:xpf45g9f6qv78swjvf79rkbwts4c4pqprjhpvmsvgx9zc6stnz7ctb
           context: c-m-b57b98j6:p-slt2w
           url: https://rancher.apps.oddie.com.br
