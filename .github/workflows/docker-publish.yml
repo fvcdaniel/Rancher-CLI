@@ -11,10 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Apropriate branch name without slash
+        run: |
+          echo "VERSION=$(echo -n $GITHUB_REF_NAME | sed -e 's|/|-|g' | sed -e 's|_|-|g')" >> $GITHUB_ENV
+          echo '::set-output name=COMMAND::namespaces create back-$VERSION'
+        id: namespace
+
       - name: Test criate namespace
         uses: ./ # Uses an action in the root directory
         with:
-          command: 'namespaces create back-testesteste$(echo -n $GITHUB_REF_NAME)'
+          command: ${{ steps.namespace.outputs.COMMAND }}
           token: token-h82zd:xpf45g9f6qv78swjvf79rkbwts4c4pqprjhpvmsvgx9zc6stnz7ctb
           context: c-m-b57b98j6:p-slt2w
           url: https://rancher.apps.oddie.com.br
